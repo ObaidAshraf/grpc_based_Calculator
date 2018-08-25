@@ -19,10 +19,10 @@ class CalculatorStub(object):
         request_serializer=Calc__pb2.AddRequest.SerializeToString,
         response_deserializer=Calc__pb2.AddReply.FromString,
         )
-    self.Substract = channel.unary_unary(
-        '/calc.Calculator/Substract',
-        request_serializer=Calc__pb2.SubstractRequest.SerializeToString,
-        response_deserializer=Calc__pb2.SubstractReply.FromString,
+    self.Subtract = channel.unary_unary(
+        '/calc.Calculator/Subtract',
+        request_serializer=Calc__pb2.SubtractRequest.SerializeToString,
+        response_deserializer=Calc__pb2.SubtractReply.FromString,
         )
     self.Multiply = channel.unary_unary(
         '/calc.Calculator/Multiply',
@@ -47,7 +47,7 @@ class CalculatorServicer(object):
     context.set_details('Method not implemented!')
     raise NotImplementedError('Method not implemented!')
 
-  def Substract(self, request, context):
+  def Subtract(self, request, context):
     # missing associated documentation comment in .proto file
     pass
     context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -76,10 +76,10 @@ def add_CalculatorServicer_to_server(servicer, server):
           request_deserializer=Calc__pb2.AddRequest.FromString,
           response_serializer=Calc__pb2.AddReply.SerializeToString,
       ),
-      'Substract': grpc.unary_unary_rpc_method_handler(
-          servicer.Substract,
-          request_deserializer=Calc__pb2.SubstractRequest.FromString,
-          response_serializer=Calc__pb2.SubstractReply.SerializeToString,
+      'Subtract': grpc.unary_unary_rpc_method_handler(
+          servicer.Subtract,
+          request_deserializer=Calc__pb2.SubtractRequest.FromString,
+          response_serializer=Calc__pb2.SubtractReply.SerializeToString,
       ),
       'Multiply': grpc.unary_unary_rpc_method_handler(
           servicer.Multiply,

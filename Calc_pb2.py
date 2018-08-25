@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='Calc.proto',
   package='calc',
   syntax='proto3',
-  serialized_pb=_b('\n\nCalc.proto\x12\x04\x63\x61lc\"$\n\nAddRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x16\n\x08\x41\x64\x64Reply\x12\n\n\x02n1\x18\x01 \x01(\x05\"*\n\x10SubstractRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x1c\n\x0eSubstractReply\x12\n\n\x02n1\x18\x01 \x01(\x05\")\n\x0fMultiplyRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x1b\n\rMultiplyReply\x12\n\n\x02n1\x18\x01 \x01(\x05\"\'\n\rDivideRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x19\n\x0b\x44ivideReply\x12\n\n\x02\x66\x31\x18\x01 \x01(\x02\x32\xe2\x01\n\nCalculator\x12)\n\x03\x41\x64\x64\x12\x10.calc.AddRequest\x1a\x0e.calc.AddReply\"\x00\x12;\n\tSubstract\x12\x16.calc.SubstractRequest\x1a\x14.calc.SubstractReply\"\x00\x12\x38\n\x08Multiply\x12\x15.calc.MultiplyRequest\x1a\x13.calc.MultiplyReply\"\x00\x12\x32\n\x06\x44ivide\x12\x13.calc.DivideRequest\x1a\x11.calc.DivideReply\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\nCalc.proto\x12\x04\x63\x61lc\"$\n\nAddRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x16\n\x08\x41\x64\x64Reply\x12\n\n\x02n1\x18\x01 \x01(\x05\")\n\x0fSubtractRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x1b\n\rSubtractReply\x12\n\n\x02n1\x18\x01 \x01(\x05\")\n\x0fMultiplyRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x1b\n\rMultiplyReply\x12\n\n\x02n1\x18\x01 \x01(\x05\"\'\n\rDivideRequest\x12\n\n\x02n1\x18\x01 \x01(\x05\x12\n\n\x02n2\x18\x02 \x01(\x05\"\x19\n\x0b\x44ivideReply\x12\n\n\x02\x66\x31\x18\x01 \x01(\x02\x32\xdf\x01\n\nCalculator\x12)\n\x03\x41\x64\x64\x12\x10.calc.AddRequest\x1a\x0e.calc.AddReply\"\x00\x12\x38\n\x08Subtract\x12\x15.calc.SubtractRequest\x1a\x13.calc.SubtractReply\"\x00\x12\x38\n\x08Multiply\x12\x15.calc.MultiplyRequest\x1a\x13.calc.MultiplyReply\"\x00\x12\x32\n\x06\x44ivide\x12\x13.calc.DivideRequest\x1a\x11.calc.DivideReply\"\x00\x62\x06proto3')
 )
 
 
@@ -94,22 +94,22 @@ _ADDREPLY = _descriptor.Descriptor(
 )
 
 
-_SUBSTRACTREQUEST = _descriptor.Descriptor(
-  name='SubstractRequest',
-  full_name='calc.SubstractRequest',
+_SUBTRACTREQUEST = _descriptor.Descriptor(
+  name='SubtractRequest',
+  full_name='calc.SubtractRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='n1', full_name='calc.SubstractRequest.n1', index=0,
+      name='n1', full_name='calc.SubtractRequest.n1', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='n2', full_name='calc.SubstractRequest.n2', index=1,
+      name='n2', full_name='calc.SubtractRequest.n2', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -128,19 +128,19 @@ _SUBSTRACTREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=82,
-  serialized_end=124,
+  serialized_end=123,
 )
 
 
-_SUBSTRACTREPLY = _descriptor.Descriptor(
-  name='SubstractReply',
-  full_name='calc.SubstractReply',
+_SUBTRACTREPLY = _descriptor.Descriptor(
+  name='SubtractReply',
+  full_name='calc.SubtractReply',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='n1', full_name='calc.SubstractReply.n1', index=0,
+      name='n1', full_name='calc.SubtractReply.n1', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -158,8 +158,8 @@ _SUBSTRACTREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=126,
-  serialized_end=154,
+  serialized_start=125,
+  serialized_end=152,
 )
 
 
@@ -196,8 +196,8 @@ _MULTIPLYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=156,
-  serialized_end=197,
+  serialized_start=154,
+  serialized_end=195,
 )
 
 
@@ -227,8 +227,8 @@ _MULTIPLYREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=199,
-  serialized_end=226,
+  serialized_start=197,
+  serialized_end=224,
 )
 
 
@@ -265,8 +265,8 @@ _DIVIDEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=228,
-  serialized_end=267,
+  serialized_start=226,
+  serialized_end=265,
 )
 
 
@@ -296,14 +296,14 @@ _DIVIDEREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=269,
-  serialized_end=294,
+  serialized_start=267,
+  serialized_end=292,
 )
 
 DESCRIPTOR.message_types_by_name['AddRequest'] = _ADDREQUEST
 DESCRIPTOR.message_types_by_name['AddReply'] = _ADDREPLY
-DESCRIPTOR.message_types_by_name['SubstractRequest'] = _SUBSTRACTREQUEST
-DESCRIPTOR.message_types_by_name['SubstractReply'] = _SUBSTRACTREPLY
+DESCRIPTOR.message_types_by_name['SubtractRequest'] = _SUBTRACTREQUEST
+DESCRIPTOR.message_types_by_name['SubtractReply'] = _SUBTRACTREPLY
 DESCRIPTOR.message_types_by_name['MultiplyRequest'] = _MULTIPLYREQUEST
 DESCRIPTOR.message_types_by_name['MultiplyReply'] = _MULTIPLYREPLY
 DESCRIPTOR.message_types_by_name['DivideRequest'] = _DIVIDEREQUEST
@@ -324,19 +324,19 @@ AddReply = _reflection.GeneratedProtocolMessageType('AddReply', (_message.Messag
   ))
 _sym_db.RegisterMessage(AddReply)
 
-SubstractRequest = _reflection.GeneratedProtocolMessageType('SubstractRequest', (_message.Message,), dict(
-  DESCRIPTOR = _SUBSTRACTREQUEST,
+SubtractRequest = _reflection.GeneratedProtocolMessageType('SubtractRequest', (_message.Message,), dict(
+  DESCRIPTOR = _SUBTRACTREQUEST,
   __module__ = 'Calc_pb2'
-  # @@protoc_insertion_point(class_scope:calc.SubstractRequest)
+  # @@protoc_insertion_point(class_scope:calc.SubtractRequest)
   ))
-_sym_db.RegisterMessage(SubstractRequest)
+_sym_db.RegisterMessage(SubtractRequest)
 
-SubstractReply = _reflection.GeneratedProtocolMessageType('SubstractReply', (_message.Message,), dict(
-  DESCRIPTOR = _SUBSTRACTREPLY,
+SubtractReply = _reflection.GeneratedProtocolMessageType('SubtractReply', (_message.Message,), dict(
+  DESCRIPTOR = _SUBTRACTREPLY,
   __module__ = 'Calc_pb2'
-  # @@protoc_insertion_point(class_scope:calc.SubstractReply)
+  # @@protoc_insertion_point(class_scope:calc.SubtractReply)
   ))
-_sym_db.RegisterMessage(SubstractReply)
+_sym_db.RegisterMessage(SubtractReply)
 
 MultiplyRequest = _reflection.GeneratedProtocolMessageType('MultiplyRequest', (_message.Message,), dict(
   DESCRIPTOR = _MULTIPLYREQUEST,
@@ -374,8 +374,8 @@ _CALCULATOR = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=297,
-  serialized_end=523,
+  serialized_start=295,
+  serialized_end=518,
   methods=[
   _descriptor.MethodDescriptor(
     name='Add',
@@ -387,12 +387,12 @@ _CALCULATOR = _descriptor.ServiceDescriptor(
     options=None,
   ),
   _descriptor.MethodDescriptor(
-    name='Substract',
-    full_name='calc.Calculator.Substract',
+    name='Subtract',
+    full_name='calc.Calculator.Subtract',
     index=1,
     containing_service=None,
-    input_type=_SUBSTRACTREQUEST,
-    output_type=_SUBSTRACTREPLY,
+    input_type=_SUBTRACTREQUEST,
+    output_type=_SUBTRACTREPLY,
     options=None,
   ),
   _descriptor.MethodDescriptor(

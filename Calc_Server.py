@@ -14,13 +14,13 @@ class Calculator(Calc_pb2_grpc.CalculatorServicer):
         return Calc_pb2.AddReply(n1 = request.n1 + request.n2)
 
     def Subtract(self, request, context):
-        return Calc_pb2.AddReply(n1 = request.n1 - request.n2)
+        return Calc_pb2.SubtractReply(n1 = request.n1 - request.n2)
 
-    def Multiple(self, request, context):
-        return Calc_pb2.AddReply(n1 = request.n1 * request.n2)
+    def Multiply(self, request, context):
+        return Calc_pb2.MultiplyReply(n1 = request.n1 * request.n2)
 
     def Divide(self, request, context):
-        return Calc_pb2.AddReply(n1 = request.n1 / request.n2)
+        return Calc_pb2.DivideReply(f1 = request.n1 / request.n2)
 
 
 def serve():
