@@ -5,6 +5,7 @@ import grpc
 import Calc_pb2
 import Calc_pb2_grpc
 
+
 def run():
     with grpc.insecure_channel('localhost:50051') as channel:
         stub = Calc_pb2_grpc.CalculatorStub(channel)
